@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آب‌وهوا</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="darkModeBtn">🌙</button>
+        <h1>🌤️ آب‌وهوا</h1>
+
+        <div class="search-section">
+            <input type="text" id="cityInput" placeholder="نام شهر را وارد کن...">
+            <button id="searchBtn">جستجو</button>
+        </div>
+
+        <div id="weatherCard" class="weather-card hidden">
+            <h2 id="cityName"></h2>
+            <div id="bigTemp" class="big-temp"></div>
+            <img id="weatherIcon" src="" alt="weather icon">
+            <p id="description"></p>
+            <div class="weather-details">
+                <div class="detail">
+                    <span>🌡️ دما</span>
+                    <span id="temp"></span>
+                </div>
+                <div class="detail">
+                    <span>💧 رطوبت</span>
+                    <span id="humidity"></span>
+                </div>
+                <div class="detail">
+                    <span>💨 باد</span>
+                    <span id="wind"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMsg" class="error hidden">شهر پیدا نشد!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
